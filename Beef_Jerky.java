@@ -29,7 +29,7 @@ private byte scanDirection = 1;
 
 		// When we scan a robot, turn toward him
 		setTurnRight(e.getBearing());
-		if(e.getName() == "Beef_Jerky"){
+		if(isTeammate(e.getName())){
 			return;
 		}
 		else{
